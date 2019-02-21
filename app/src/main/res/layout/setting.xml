@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09777777"
+    android:orientation="vertical">
+    <TextView
+        android:text="支持"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="12sp"
+        android:textSize="13sp"
+        android:background="#00000000"
+        android:textColor="#bc777777"
+        />
+    <TextView
+        android:text="  反馈"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginLeft="6sp"
+        android:layout_marginRight="6sp"
+        android:layout_marginTop="8sp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:textColor="#d21f1f1f"
+        />
+
+    <TextView
+        android:text="  帮助"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginLeft="6sp"
+        android:layout_marginRight="6sp"
+        android:layout_marginTop="1sp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:textColor="#d21f1f1f"
+        />
+    <TextView
+        android:text="  关于"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginLeft="6sp"
+        android:layout_marginRight="6sp"
+        android:layout_marginTop="1sp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:textColor="#d21f1f1f"
+        />
+    <TextView
+        android:text="语音"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="15sp"
+        android:textSize="13sp"
+        android:background="#00000000"
+        android:textColor="#bc777777"
+        />
+    <TextView
+        android:text="  语音输入"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginLeft="6sp"
+        android:layout_marginRight="6sp"
+        android:layout_marginTop="1sp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:textColor="#d21f1f1f"
+        />
+    <TextView
+        android:text="  语音区域"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginLeft="6sp"
+        android:layout_marginRight="6sp"
+        android:layout_marginTop="1sp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:textColor="#d21f1f1f"
+        />
+
+    <TextView
+        android:text="  离线翻译"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginLeft="6sp"
+        android:layout_marginRight="6sp"
+        android:layout_marginTop="20sp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:textColor="#d21f1f1f"
+        />
+    <TextView
+        android:text="  发送崩溃报告"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginLeft="6sp"
+        android:layout_marginRight="6sp"
+        android:layout_marginTop="20sp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:textColor="#d21f1f1f"
+        />
+
+    <TextView
+        android:text="  清除翻译历史记录"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginLeft="6sp"
+        android:layout_marginRight="6sp"
+        android:layout_marginTop="20sp"
+        android:textSize="15sp"
+        android:gravity="center|center_vertical"
+        android:textColor="#ffffff"
+        android:background="#bde11212"
+        />
+</LinearLayout>

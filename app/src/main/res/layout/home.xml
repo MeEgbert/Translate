@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#09777777">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        >
+        <Button
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="英文"
+            android:textColor="#3F51B5"
+            android:background="#00000000"
+            android:tag="EN"
+            />
+
+        <ImageButton
+            android:id="@+id/reverseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            style="@style/Widget.AppCompat.Button"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_compare_arrows_black_24dp"/>
+
+        <Button
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="中文"
+            android:background="#00000000"
+            android:textColor="#3F51B5"
+            android:tag="zh-CHS"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <EditText
+        android:id="@+id/txt"
+        android:layout_marginLeft="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:layout_marginTop="5px"
+        android:background="#FFFFFF"
+        android:textSize="15sp"
+        android:hint="请输入查询的单词！"
+        android:minLines="6"
+        android:gravity="top"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_marginTop="3px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+    <ImageButton
+        android:id="@+id/ocrButton"
+        android:layout_marginTop="3px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_camera_enhance_black_24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="13dp"
+        android:background="#ffffff"
+        >
+        <LinearLayout android:id="@+id/tmall"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#3b777777"
+            android:layout_margin="12sp"
+            >
+            <LinearLayout
+                android:id="@+id/pronunciation"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginBottom="1sp">
+
+                <TextView
+                    android:text="美式发音: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/us"/>
+                <TextView
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/us_pronunciation"
+                    android:layout_marginLeft="2sp"
+                    android:layout_marginRight="4sp"
+                    android:textSize="9sp"
+                    />
+                <TextView
+                    android:text="英式发音: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/uk" />
+                <TextView
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/uk_pronunciation"
+                    android:layout_marginLeft="2sp"
+                    android:layout_marginRight="4sp"
+                    android:textSize="9sp"/>
+                <Button
+                    android:background="@drawable/ic_volume_down_black_24dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="4sp"
+                    android:id="@+id/uk_btn"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:text=" 基本释义："
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                />
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:id="@+id/paraphrase"
+                android:lineSpacingExtra="3dp"
+                />
+
+            <ScrollView
+                android:id="@+id/myscollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                >
+            <WebView
+                android:id="@+id/detail_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="WebViewLayout">
+            </WebView>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
